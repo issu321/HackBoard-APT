@@ -1,0 +1,266 @@
+/* HackBoard — Cyberpunk Theme Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* Global theme */
+.stApp {
+    background-color: #0a0a0a;
+    font-family: 'Share Tech Mono', 'Courier New', monospace;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #0d0d0d !important;
+    border-right: 1px solid #1a1a1a;
+}
+
+[data-testid="stSidebar"] .stRadio label {
+    color: #00f0ff !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+[data-testid="stSidebar"] .stRadio > div {
+    gap: 0.3rem;
+}
+
+/* Headers */
+.stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown h4, .stMarkdown h5, .stMarkdown h6,
+.element-container h1, .element-container h2, .element-container h3, .element-container h4,
+.element-container h5, .element-container h6 {
+    color: #00f0ff !important;
+    font-family: 'Share Tech Mono', 'Courier New', monospace;
+}
+
+/* Text content */
+.stMarkdown p, .stMarkdown span, .stMarkdown label,
+.element-container p, .element-container span, .element-container label,
+[data-testid="stTextInput"] label, [data-testid="stNumberInput"] label,
+.stTextArea label, [data-testid="stSelectbox"] label,
+[data-testid="stMultiselect"] label, [data-testid="stSlider"] label,
+[data-testid="stCheckbox"] label, [data-testid="stRadio"] label {
+    color: #e0e0e0;
+    font-family: 'Share Tech Mono', 'Courier New', monospace;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #00f0ff22 !important;
+    color: #00f0ff !important;
+    border: 1px solid #00f0ff !important;
+    border-radius: 4px !important;
+    font-family: 'Share Tech Mono', 'Courier New', monospace;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #00f0ff44 !important;
+    box-shadow: 0 0 15px #00f0ff66;
+}
+
+/* Metric cards */
+[data-testid="stMetricValue"] {
+    color: #00ff41 !important;
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #00f0ff !important;
+    font-size: 0.85rem !important;
+}
+
+/* Dataframes */
+.stDataFrame {
+    background-color: #111111 !important;
+    border: 1px solid #222222 !important;
+}
+
+.stDataFrame th {
+    background-color: #1a1a1a !important;
+    color: #00f0ff !important;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.stDataFrame td {
+    color: #e0e0e0 !important;
+    font-family: 'Share Tech Mono', monospace;
+    border-bottom: 1px solid #222222 !important;
+}
+
+/* Code blocks */
+.stCodeBlock {
+    background-color: #111111 !important;
+    border: 1px solid #222222 !important;
+    border-left: 3px solid #00f0ff !important;
+}
+
+/* Expander */
+[data-testid="stExpander"] .streamlit-expanderHeader {
+    background-color: #111111 !important;
+    color: #00f0ff !important;
+    border: 1px solid #222222 !important;
+    border-radius: 4px !important;
+    font-family: 'Share Tech Mono', 'Courier New', monospace;
+}
+
+[data-testid="stExpander"] .streamlit-expanderContent {
+    background-color: #0d0d0d !important;
+    border: 1px solid #1a1a1a !important;
+}
+
+/* Input fields */
+.stTextInput > div > div > input,
+.stNumberInput > div > div > input,
+.stTextArea > div > div > textarea {
+    background-color: #111111 !important;
+    color: #00f0ff !important;
+    border: 1px solid #222222 !important;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.stTextInput > div > div > input:focus,
+.stTextArea > div > div > textarea:focus {
+    border-color: #00f0ff !important;
+    box-shadow: 0 0 10px #00f0ff44 !important;
+}
+
+/* Selectbox */
+.stSelectbox > div > div {
+    background-color: #111111 !important;
+    color: #00f0ff !important;
+    border: 1px solid #222222 !important;
+}
+
+/* File uploader */
+.stFileUploader > div > div {
+    background-color: #111111 !important;
+    border: 2px dashed #00f0ff44 !important;
+    color: #e0e0e0 !important;
+}
+
+.stFileUploader > div > div:hover {
+    border-color: #00f0ff !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 2px;
+    background-color: #0d0d0d !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: #111111 !important;
+    color: #00f0ff !important;
+    border: 1px solid #222222 !important;
+    border-radius: 4px 4px 0 0 !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #00f0ff22 !important;
+    border-bottom: 2px solid #00f0ff !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #222222;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00f0ff44;
+}
+
+/* Terminal box */
+.terminal-box {
+    background-color: #0d0d0d;
+    border: 1px solid #00f0ff33;
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: 'Share Tech Mono', monospace;
+    color: #00ff41;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: inset 0 0 20px #00f0ff11;
+}
+
+/* Alert boxes */
+.alert-critical {
+    background-color: #ff004011;
+    border-left: 3px solid #ff0040;
+    color: #ff0040;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.8rem;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.alert-warning {
+    background-color: #ffaa0011;
+    border-left: 3px solid #ffaa00;
+    color: #ffaa00;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.8rem;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.alert-info {
+    background-color: #00f0ff11;
+    border-left: 3px solid #00f0ff;
+    color: #00f0ff;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.8rem;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.alert-safe {
+    background-color: #00ff4111;
+    border-left: 3px solid #00ff41;
+    color: #00ff41;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.8rem;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* Glowing cards */
+.glow-card {
+    background-color: #111111;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.glow-card:hover {
+    border-color: #00f0ff44;
+    box-shadow: 0 0 15px #00f0ff22;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: #444444;
+    font-size: 0.75rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #1a1a1a;
+    font-family: 'Share Tech Mono', monospace;
+}

@@ -1,0 +1,32 @@
+{
+  "boot_sequence": [
+    "[BOOT] Initializing HackBoard Kernel...",
+    "[BOOT] Loading security modules...",
+    "[BOOT] Mounting threat intelligence database...",
+    "[BOOT] Initializing neural heuristic engine...",
+    "[BOOT] Calibrating OSINT sensors...",
+    "[BOOT] Loading packet analytics submodule...",
+    "[BOOT] Establishing secure telemetry channel...",
+    "[BOOT] Handshake with SOC grid: ESTABLISHED",
+    "[BOOT] Threat feed synchronization: ACTIVE",
+    "[BOOT] AI Security Insight Engine: ONLINE",
+    "[BOOT] Cyber visualization engine: RENDERING",
+    "[BOOT] System integrity check: PASSED",
+    "[BOOT] All defensive modules armed.",
+    "[BOOT] Welcome to HackBoard — Cybersecurity Intelligence Platform"
+  ],
+  "soc_alert_templates": [
+    {"type": "INTRUSION_DETECTION", "template": "Suspicious login attempt blocked from {ip}", "level": "warning"},
+    {"type": "FIREWALL", "template": "Outbound connection to known C2 domain flagged: {domain}", "level": "critical"},
+    {"type": "MALWARE_SCAN", "template": "Heuristic match on file hash: {hash}", "level": "warning"},
+    {"type": "NETWORK", "template": "Anomalous traffic spike detected on port {port}", "level": "warning"},
+    {"type": "AUTH", "template": "Multiple failed authentication attempts from {ip}", "level": "error"},
+    {"type": "SYSTEM", "template": "Unexpected process elevation detected: {proc}", "level": "critical"},
+    {"type": "DNS", "template": "DNS tunneling pattern detected from {ip}", "level": "error"},
+    {"type": "WEB", "template": "SQL injection attempt blocked on endpoint /api/login", "level": "warning"},
+    {"type": "EMAIL", "template": "Phishing email campaign detected targeting internal users", "level": "warning"},
+    {"type": "CRYPTO", "template": "Cryptomining activity detected on host {ip}", "level": "error"},
+    {"type": "PATCH", "template": "Critical vulnerability CVE-2024-{cve} scan completed", "level": "info"},
+    {"type": "AI_SOC", "template": "AI anomaly model flagged behavioral deviation", "level": "warning"}
+  ]
+}

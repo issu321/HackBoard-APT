@@ -1,0 +1,425 @@
+# 🛡️ HackBoard
+
+> **Professional Cybersecurity Intelligence Platform**
+
+[![Python](https://img.shields.io/badge/Python-3.9+-00f0ff?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-ff00ff?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io)
+[![License](https://img.shields.io/badge/License-MIT-00ff41?style=flat-square)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.0-ffaa00?style=flat-square)](https://github.com/issu321/hackboard)
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║     ██╗  ██╗ █████╗  ██████╗██╗  ██╗██████╗  ██████╗  █████╗ ██████╗  ║
+║     ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██╔══██╗██╔═══██╗██╔══██╗██╔══██╗ ║
+║     ███████║███████║██║     █████╔╝ ██████╔╝██║   ██║███████║██║  ██║ ║
+║     ██╔══██║██╔══██║██║     ██╔═██╗ ██╔══██╗██║   ██║██╔══██║██║  ██║ ║
+║     ██║  ██║██║  ██║╚██████╗██║  ██╗██████╔╝╚██████╔╝██║  ██║██████╔╝ ║
+║     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═════╝  ║
+║                                                                      ║
+║              CYBERSECURITY INTELLIGENCE PLATFORM                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+## 📖 Overview
+
+**HackBoard** is a professional cybersecurity intelligence platform designed for **educational**, **defensive**, and **ethical hacking** purposes. Built as a futuristic cyberpunk SOC dashboard, it combines AI-inspired security analysis, advanced network scanning, OSINT intelligence, threat analytics, and comprehensive reporting — all within an immersive Streamlit interface.
+
+### Key Capabilities
+
+- 🤖 **AI Security Insights** — Contextual AI-like analysis across all security vectors
+- 🔍 **Network Scanner** — Safe TCP port scanning with topology visualization
+- 🌐 **OSINT Intelligence** — WHOIS, DNS, SSL, subdomain enumeration
+- 🔐 **Password Analyzer** — Entropy scoring with pattern detection
+- 🧪 **Hashing Laboratory** — 8 algorithms, file/text hashing, integrity verification
+- 📁 **File Security Analyzer** — Static analysis with entropy and magic bytes
+- ⚠️ **Vulnerability Assessment** — Simulated CVSS scoring and recommendations
+- 📊 **Packet Analytics** — Protocol distribution and traffic visualization
+- 🧠 **Threat Intelligence** — Kill chain visualization and threat radars
+- 💻 **System Monitor** — Real-time CPU, RAM, disk, and process telemetry
+
+---
+
+## 🚀 Installation
+
+### Prerequisites
+
+- **Python 3.9+**
+- **pip** package manager
+- **Git** (for cloning)
+
+### Quick Install (pip)
+
+```bash
+pip install hackboard
+```
+
+### Development Install (from source)
+
+```bash
+git clone https://github.com/issu321/hackboard.git
+cd hackboard
+pip install -e .
+```
+
+### Linux / Kali Linux / Ubuntu / Debian
+
+```bash
+git clone https://github.com/issu321/hackboard.git
+cd hackboard
+bash install.sh
+```
+
+The installer will:
+1. ✅ Detect Python and pip
+2. ✅ Check virtual environment
+3. ✅ Create `~/.config/hackboard/` directories
+4. ✅ Install all dependencies
+5. ✅ Launch HackBoard automatically
+
+**System dependencies (if scapy fails):**
+```bash
+sudo apt-get update
+sudo apt-get install -y libpcap-dev
+```
+
+### Windows 10 / 11
+
+```powershell
+git clone https://github.com/issu321/hackboard.git
+cd hackboard
+pip install -e .
+```
+
+**Note for Windows:**
+- Install [Npcap](https://npcap.com/) for full packet capture features
+- Run as Administrator for raw socket operations
+- The app gracefully falls back to simulated data without admin rights
+
+---
+
+## 🖥️ Usage
+
+### Launch the Dashboard
+
+```bash
+# After pip install
+hackboard
+
+# Or with options
+hackboard --port 8080 --host 0.0.0.0
+hackboard --no-browser
+
+# Or as a Python module
+python -m hackboard
+```
+
+### CLI Options
+
+```
+usage: hackboard [-h] [--version] [--port PORT] [--host HOST] [--no-browser] [--headless] [--config-dir]
+
+HackBoard — Professional Cybersecurity Intelligence Platform
+
+options:
+  -h, --help       Show this help message and exit
+  --version, -v    Show version and exit
+  --port PORT, -p PORT
+                   Port to run the Streamlit server on (default: 8501)
+  --host HOST, -H HOST
+                   Host to bind the server to (default: localhost)
+  --no-browser, -n
+                   Do not open browser automatically
+  --headless       Run in headless mode
+  --config-dir     Print the configuration directory path and exit
+```
+
+---
+
+## 📸 Screenshots
+
+> *Screenshots will be added here. The dashboard features:*
+> - Animated terminal boot sequence
+> - Live SOC feed with simulated alerts
+> - Interactive Plotly charts with cyberpunk dark theme
+> - Network topology node graphs
+> - Risk gauges and system telemetry
+
+---
+
+## 🧩 Features
+
+| Module | Description |
+|--------|-------------|
+| 🏠 **Dashboard** | Central command center with live metrics, threat radar, attack chain |
+| 🔍 **Network Scanner** | TCP port scanning with topology maps and risk scoring |
+| 🌐 **Domain Intelligence** | WHOIS, DNS, SSL certificate analysis |
+| 📡 **Subdomain Intelligence** | Subdomain enumeration with relationship graphs |
+| 🔐 **Password Analyzer** | Entropy & strength analysis with AI recommendations |
+| 🧪 **Hashing Laboratory** | Multi-algorithm hashing (MD5, SHA family, BLAKE2) |
+| 📁 **File Security Analyzer** | Upload & analyze file security with static analysis |
+| ⚠️ **Vulnerability Intelligence** | Simulated vulnerability assessment with CVSS |
+| 📊 **Packet Analytics** | Network traffic visualization and protocol distribution |
+| 🧠 **Threat Intelligence** | Attack chains, threat radars, and heatmaps |
+| 💻 **System Monitor** | Real-time CPU, RAM, disk, and process monitoring |
+| 📂 **Upload Center** | Import logs and data files (CSV, JSON, TXT, PCAP) |
+| 📥 **Download Center** | Export reports in CSV, JSON, TXT formats |
+| 📈 **Cyber Analytics** | Custom chart generation engine |
+| 🌍 **DNS Intelligence** | Multi-record DNS lookups with visualization |
+| 🛰️ **Network Topology** | Interactive node graphs from scan data |
+| 📋 **Reports Center** | View and manage all generated reports |
+| 🤖 **AI Security Insights** | Cross-domain AI analysis and correlation |
+
+---
+
+## 🔌 Plugin Development
+
+HackBoard supports a plugin architecture. Place Python files in the `plugins/` directory and they will be automatically discovered and loaded.
+
+### Example Plugin
+
+```python
+# plugins/my_plugin.py
+
+PLUGIN_NAME = "My Plugin"
+PLUGIN_VERSION = "1.0.0"
+PLUGIN_DESCRIPTION = "A custom security plugin for HackBoard."
+
+
+def register(app_context: dict) -> None:
+    """Register the plugin with HackBoard."""
+    print(f"[PLUGIN] {PLUGIN_NAME} v{PLUGIN_VERSION} loaded")
+    # Add your custom logic here
+```
+
+### Plugin Interface
+
+- `PLUGIN_NAME` (str): Human-readable plugin name
+- `PLUGIN_VERSION` (str): Plugin version
+- `PLUGIN_DESCRIPTION` (str): Brief description
+- `register(app_context)`: Function called with the application context
+
+---
+
+## 🛠️ Developer Guide
+
+### Project Structure
+
+```
+hackboard/
+├── hackboard/
+│   ├── __init__.py          # Package init, version, config dirs
+│   ├── __main__.py          # Entry point for python -m hackboard
+│   ├── app.py               # Main Streamlit application (18 pages)
+│   ├── cli.py               # CLI launcher (hackboard command)
+│   ├── launcher.py          # Programmatic launch API
+│   ├── security_tools.py    # Network scanner, password, hashing, file, vuln
+│   ├── osint_tools.py       # WHOIS, DNS, subdomains, IP, SSL, metadata
+│   ├── analytics.py         # Plotly charts, heatmaps, graphs, gauges
+│   ├── utils.py             # Config, logging, exports, SOC feed, AI insights
+│   ├── assets/
+│   │   ├── banner.txt       # ASCII art banner
+│   │   ├── styles.css       # Cyberpunk theme styles
+│   │   └── animations.json  # Boot sequence & SOC alert configs
+│   └── plugins/
+│       ├── __init__.py
+│       └── example_plugin.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_utils.py
+│   └── test_security_tools.py
+├── docs/
+├── config/
+├── pyproject.toml           # Modern setuptools packaging
+├── setup.cfg                # Backup setuptools config
+├── MANIFEST.in              # Package manifest
+├── requirements.txt         # Dependencies
+├── install.sh               # Linux automated installer
+├── LICENSE                  # MIT License
+└── README.md                # This file
+```
+
+### Configuration
+
+HackBoard stores user settings in `~/.config/hackboard/`:
+
+```
+~/.config/hackboard/
+├── logs/           # Rotating application logs
+├── reports/        # Auto-saved reports (YYYY-MM-DD/)
+├── history/        # Threat logs and session history
+└── settings/       # User preferences
+```
+
+### Logging
+
+Logs are automatically written to `~/.config/hackboard/logs/hackboard.log` with rotation (5 backups, 5MB each).
+
+```python
+from hackboard.utils import logger
+logger.info("Custom log message")
+```
+
+### Running Tests
+
+```bash
+pytest
+# Or with coverage
+pytest --cov=hackboard --cov-report=html
+```
+
+### Code Style
+
+```bash
+# Format with black
+black hackboard/
+
+# Type check with mypy
+mypy hackboard/
+
+# Lint with flake8
+flake8 hackboard/
+```
+
+---
+
+## 🛡️ Ethical Hacking Disclaimer
+
+```
+╔════════════════════════════════════════════════════════════════╗
+║  THIS PROJECT IS STRICTLY FOR EDUCATIONAL AND DEFENSIVE USE  ║
+║  ONLY.                                                         ║
+║                                                                ║
+║  • Only scan systems you OWN or have WRITTEN AUTHORIZATION    ║
+║    to test.                                                    ║
+║  • All tools are designed for AUTHORIZED LAB ENVIRONMENTS.    ║
+║  • No malware, ransomware, or destructive payloads included.  ║
+║  • No credential theft or illegal persistence mechanisms.       ║
+║  • Use responsibly and in compliance with all applicable laws. ║
+╚════════════════════════════════════════════════════════════════╝
+```
+
+By using this software, you agree to use it only on systems you own or have explicit permission to test, and for learning, teaching, and defensive hardening only.
+
+---
+
+## 📦 Packaging
+
+### pip Install (Local)
+
+```bash
+cd hackboard
+pip install .
+```
+
+### pip Install (Editable)
+
+```bash
+cd hackboard
+pip install -e .
+```
+
+### Build Distribution
+
+```bash
+cd hackboard
+python -m build
+```
+
+This produces `dist/hackboard-1.0.0-py3-none-any.whl` and `dist/hackboard-1.0.0.tar.gz`.
+
+### APT Package (Future)
+
+The project is structured to be easily converted to a Debian package:
+
+```bash
+# Future command
+sudo apt install hackboard
+```
+
+The `install.sh` script and `pyproject.toml` provide the foundation for APT packaging.
+
+---
+
+## 🗺️ Future Roadmap
+
+- [ ] **Real-time packet capture** with Scapy integration (admin mode)
+- [ ] **CVE database integration** for live vulnerability lookup
+- [ ] **Shodan API integration** for internet-facing asset discovery
+- [ ] **MITRE ATT&CK mapping** for threat intelligence
+- [ ] **PDF report generation** with professional formatting
+- [ ] **Multi-language support** (internationalization)
+- [ ] **Dark/Light theme toggle**
+- [ ] **User authentication** and session management
+- [ ] **REST API endpoint** for programmatic access
+- [ ] **Docker containerization** for one-click deployment
+- [ ] **APT package** for Debian/Ubuntu/Kali Linux
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the cybersecurity community!
+
+1. **Fork** the repository
+2. **Create a branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
+
+### Guidelines
+- All contributions must remain **educational and defensive**
+- No malicious or destructive code will be accepted
+- Follow PEP 8 style guidelines
+- Add docstrings to all functions
+- Ensure cross-platform compatibility (Linux & Windows)
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+```
+MIT License
+
+Copyright (c) 2024-2026 issu321
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
+
+---
+
+## 👤 Developer
+
+**Developed by [issu321](https://github.com/issu321)**
+
+[![GitHub](https://img.shields.io/badge/GitHub-issu321-00f0ff?style=for-the-badge&logo=github)](https://github.com/issu321)
+[![Repository](https://img.shields.io/badge/Repo-hackboard-00ff41?style=for-the-badge&logo=github)](https://github.com/issu321/hackboard)
+
+---
+
+<div align="center">
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║     STAY ETHICAL.  STAY CURIOUS.  STAY SECURE.                      ║
+║                                                                      ║
+║     HackBoard — Cybersecurity Intelligence Platform                   ║
+║     Developed by issu321                                              ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
+
+**⭐ Star this repo if you find it useful! ⭐**
+
+</div>
